@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>계산 결과</title>
+  <meta charset="UTF-8">
+</head>
+<body>
+<h1>계산 결과</h1>
+<p th:text="'첫 번째 숫자: ' + ${num1}"></p>
+<p th:text="'두 번째 숫자: ' + ${num2}"></p>
+<p th:text="'결과: ' + ${result}"></p>
+<a th:href="@{/calculator}">다시 계산하기</a>
+</body>
+</html>

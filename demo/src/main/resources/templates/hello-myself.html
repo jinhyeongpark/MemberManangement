@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>자기소개 페이지</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f0f0f0;
+    }
+    .container {
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <h1>안녕하세요!</h1>
+  <p>제 이름은 <span th:text="${name}">홍길동</span>입니다.</p>
+  <p>제 키는 <span th:text="${height}">180</span>cm이고, 몸무게는 <span th:text="${weight}">75</span>kg입니다.</p>
+  <p>이 페이지는 스프링 부트와 타임리프를 사용하여 만들어졌습니다.</p>
+  <img src="/고양이사진.jpg" alt="고양이 사진" />
+</div>
+</body>
+</html>
