@@ -7,6 +7,6 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface SpringDataJpaMemberRepository extends JpaRepository<Member, Long> {
-
+    //비즈니스 요구사항 무시
     Optional<Member> findByName(String name);
 }
